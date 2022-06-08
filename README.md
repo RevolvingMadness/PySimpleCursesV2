@@ -20,21 +20,18 @@ window = Window()
 # Make the main loop
 while 1:
      window.update()
-``
 ```
 
 #### Making your first "Hello, World!" program
 ```py
 # Add the widget "Label"
 window.add(Label(1, 1, "Hello, World!"))
-``
 ```
 
 #### Adding buttons
 ```py
 # Add the widget "Button"
 window.add(Button(1, 1, "This is a button!"))
-``
 ```
 
 #### Getting user input
