@@ -11,6 +11,9 @@ PySimpleCurses is a python module that allows you to make terminal user interfac
 
 ### Examples
 #### Bare Bones
+
+!!! Please note all of the arguments are **CASE SENSITIVE** !!!
+
 ```py
 from PySimpleCurses import *
 
@@ -37,8 +40,8 @@ window.add(Button(1, 1, "This is a button!"))
 #### Getting user input
 There are two ways of getting user input
 1. Use the function `getinput()`, the function `getinput()` will return a class called inputData and that class has 4 attributes you can use the following:
-     1. X (Mouse X value)
-     2. Y (Mouse Y value)
+     1. x (Mouse x value)
+     2. y (Mouse y value)
      3. MB (Mouse Button)
      4. Key (Key the user pressed)
 2. Use the widget "Entry"
@@ -59,40 +62,40 @@ There are two ways of getting user input
 #### Button Widget:
 
 Optional Arguments:
-- ONCLICK (This is the function that the widget will run when it is clicked. DEFAULT=None)
+- onclick (This is the function that the widget will run when it is clicked. DEFAULT=None)
 
 Positional Arguments:
-- X (X value of the widget)
-- Y (Y value of the widget)
-- TEXT (This is the text the widget will show)
+- x (x value of the widget)
+- x (y value of the widget)
+- name (This is the name the widget will show)
 
 ```py
-window.add(Button(X, Y, TEXT, ONCLICK))
+window.add(Button(x, y, name, onclick))
 ```
 
 #### Entry Widget:
 
 Positional Arguments:
-- X (X value of the widget)
-- Y (Y value of the widget)
-- TEXT (This is the text the widget will show)
+- x (x value of the widget)
+- y (y value of the widget)
+- text (This is the text the widget will show)
 
 Optional Arguments:
-- PLACEHOLDER (This is what will show when the widget isn't seleceted. DEFAULT="")
+- placeholder (This is what will show when the widget isn't seleceted. DEFAULT="")
 
 ```py
-window.add(Entry(X, Y, DEFAULT_TEXT, PLACEHOLDER))
+window.add(Entry(x, y, DEFAULT_TEXT, placeholder))
 ```
 
 #### Label Widget:
 
 Positional Arguments:
-- X (X value of the widget)
-- Y (Y value of the widget)
-- TEXT (This is the text that will show)
+- x (x value of the widget)
+- y (y value of the widget)
+- text (This is the text that will show)
 
 ```py
-window.add(Label(X, Y, TEXT))
+window.add(Label(x, y, text))
 ```
 
 #### Rect Widget:
@@ -101,40 +104,40 @@ Optional Arguments:
 - FILL_COLOR (This sets the color of the Rect (rectangle). DEFAULT=(255, 255, 255))
 
 Positional Arguments:
-- X (X value of the widget)
-- Y (Y value of the widget)
-- WIDTH (WIDTH of the Rect (rectangle))
-- HEIGHT (HEIGHT of the Rect (rectangle))
+- x (x value of the widget)
+- y (y value of the widget)
+- width (width of the Rect (rectangle))
+- height (height of the Rect (rectangle))
 
 ```py
-window.add(Rect(X, Y, WIDTH, HEIGHT, FILL_COLOR))
+window.add(Rect(x, y, width, height, FILL_COLOR))
 ```
 
 #### SubWindow Widget:
 
 Positional Arguments:
-- X (X value of the widget)
-- Y (Y value of the widget)
-- WIDTH (WIDTH of the SubWindow)
-- HEIGHT (HEIGHT of the SubWindow)
-- TITLE (This is the title of SubWindow)
+- x (x value of the widget)
+- y (y value of the widget)
+- width (width of the SubWindow)
+- height (height of the SubWindow)
+- title (This is the title of SubWindow)
 
 ```py
-window.add(SubWindow(X, Y, WIDTH, HEIGHT, TITLE))
+window.add(SubWindow(x, y, width, height, title))
 ```
 
 #### TextBox Widget:
 
 Optional Arguments:
-- TEXT (This is the default text it will show. DEFAULT="")
-- PLACEHOLDER (This is what will show when the widget isnt seleceted. DEFAULT="")
+- text (This is the default text it will show. DEFAULT="")
+- placeholder (This is what will show when the widget isnt seleceted. DEFAULT="")
 
 Positional Arguments:
-- X (X value of the widget)
-- Y (Y value of the widget)
-- WIDTH (WIDTH of the TextBox)
-- HEIGHT (HEIGHT of the TextBox)
+- x (x value of the widget)
+- y (y value of the widget)
+- width (width of the TextBox)
+- height (height of the TextBox)
 
 ```py
-window.add(TextBox(X, Y, WIDTH, HEIGHT, TEXT, PLACEHOLDER))
+window.add(TextBox(x, y, width, height, text, placeholder))
 ```
