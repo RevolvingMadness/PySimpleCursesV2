@@ -7,6 +7,7 @@ PySimpleCurses is a python module that allows you to make terminal user interfac
 
 ```diff
 -=[ WARNING: THIS MODULE WILL ONLY WORK ON WINDOWS ]=-
+-=[ WARNING: THIS PROGRAM WILL NOT WORK ON THE IDLE SHELL]=-
 ```
 
 ### Examples
