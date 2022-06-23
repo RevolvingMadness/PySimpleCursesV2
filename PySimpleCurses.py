@@ -167,13 +167,9 @@ class Window:
 		os.system('')
 		self.layout = []
 		self.widgets = []
-		self.selidx = 0
-		try:
-			self.oS = os.get_terminal_size(0) # old Size
-			self.nS = os.get_terminal_size(0) # new Size
-		except:
-			self.oS = os.get_terminal_size(1) # old Size
-			self.nS = os.get_terminal_size(1) # new Size
+		self.selidx = 
+		self.oS = os.get_terminal_size() # old Size
+		self.nS = os.get_terminal_size() # new Size
 		self.curwidgetidx = 0
 		self.w, self.h = os.get_terminal_size()
 		self.addorder = []
