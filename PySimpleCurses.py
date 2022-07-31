@@ -167,7 +167,7 @@ class Window:
 		os.system('')
 		self.layout = []
 		self.widgets = []
-		self.selidx = 
+		self.selidx = 0
 		self.oS = os.get_terminal_size() # old Size
 		self.nS = os.get_terminal_size() # new Size
 		self.curwidgetidx = 0
